@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Convertidor de Monedas al Instante | Extensión gratis para Chrome y Edge</title>
+<meta name="description" content="Extensión gratuita para Chrome y Edge: selecciona cualquier precio en una página web y velo al instante en tu moneda (pesos, dólares, euros…). Tasas oficiales del BCE, más de 200 monedas, sin rastreo. Ideal para compras en línea, hoteles y viajes.">
+<link rel="canonical" href="https://seawolfmx.github.io/currency-converter/es/">
+<link rel="alternate" hreflang="en" href="https://seawolfmx.github.io/currency-converter/">
+<link rel="alternate" hreflang="es" href="https://seawolfmx.github.io/currency-converter/es/">
+<link rel="alternate" hreflang="x-default" href="https://seawolfmx.github.io/currency-converter/">
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<meta name="theme-color" content="#4f46e5">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Convertidor de Monedas al Instante">
+<meta property="og:description" content="Selecciona cualquier precio en la web y velo al instante en tu moneda. Gratis para Chrome y Edge.">
+<meta property="og:url" content="https://seawolfmx.github.io/currency-converter/es/">
+<meta property="og:image" content="https://seawolfmx.github.io/currency-converter/img/promo-marquee-1400x560.png">
+<meta property="og:locale" content="es_MX">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="../style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://seawolfmx.github.io/currency-converter/#app",
+      "name": "Currency Converter – Instant Prices",
+      "alternateName": "Convertidor de Monedas al Instante",
+      "description": "Extensión de navegador que convierte los precios de cualquier sitio web a la moneda del usuario. Basta con seleccionar un precio, hacer clic derecho o abrir el conversor de la barra para ver el monto en tu moneda y en monedas adicionales. Usa tasas de referencia oficiales del Banco Central Europeo y datos abiertos para más de 200 monedas.",
+      "applicationCategory": "BrowserApplication",
+      "applicationSubCategory": "Convertidor de divisas",
+      "operatingSystem": "Google Chrome, Microsoft Edge (Windows, macOS, Linux, ChromeOS)",
+      "softwareVersion": "1.1.0",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "MXN" },
+      "inLanguage": "es",
+      "downloadUrl": [
+        "https://chromewebstore.google.com/detail/oibcaoobgfoehhhjjlahbbmkhciipbki",
+        "https://microsoftedge.microsoft.com/addons/detail/fppgldlgjjakillggnaifamehdjmanmi"
+      ],
+      "image": "https://seawolfmx.github.io/currency-converter/img/icon.png",
+      "publisher": { "@type": "Organization", "name": "MG Soluciones", "email": "mg.soluciones.mex@gmail.com" }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "es",
+      "mainEntity": [
+        { "@type": "Question", "name": "¿Cómo convierto precios al comprar en una tienda extranjera?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Instala la extensión gratuita Currency Converter – Instant Prices para Chrome o Edge, elige tu moneda (por ejemplo pesos mexicanos) y selecciona cualquier precio en la página. Un globo te muestra al instante el monto en tu moneda, sin abrir otra pestaña ni buscar en Google." } },
+        { "@type": "Question", "name": "¿La extensión es gratis?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí. Es totalmente gratuita, sin anuncios, sin cuenta y sin compras dentro de la extensión." } },
+        { "@type": "Question", "name": "¿De dónde salen los tipos de cambio?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Tienen prioridad las tasas de referencia oficiales del Banco Central Europeo (vía la API Frankfurter). El resto de monedas y criptomonedas vienen del conjunto de datos abierto fawazahmed0 currency-api. Se actualizan solas cada 6 horas." } },
+        { "@type": "Question", "name": "¿Qué monedas y formatos de precio reconoce?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Más de 200 monedas. Detecta símbolos como $, €, £, ¥, R$, AU$ y S/, códigos ISO como USD, EUR, MXN y GBP, palabras como 'dólares' o 'euros', y los formatos 1,234.56 y 1.234,56." } },
+        { "@type": "Question", "name": "¿Sirve para comparar precios de hoteles y vuelos al viajar?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí. Selecciona la tarifa por noche en un sitio de hoteles o el precio de un vuelo y ve el monto en tu moneda y en monedas adicionales como USD y EUR, lado a lado." } },
+        { "@type": "Question", "name": "¿Qué significa el signo $ en cada sitio web?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Como muchos países usan $, la extensión lo deduce del dominio del sitio (.mx es peso mexicano, .ca dólar canadiense, .ar peso argentino y el resto dólar estadounidense). También puedes fijar una moneda en Ajustes." } },
+        { "@type": "Question", "name": "¿La extensión recopila mis datos?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. El texto que seleccionas se procesa dentro de tu navegador y nunca se envía. Las únicas conexiones descargan archivos públicos de tipos de cambio. No hay analítica ni rastreo." } },
+        { "@type": "Question", "name": "¿Es el mismo tipo de cambio que me cobrará el banco?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Son tasas de referencia de mercado para comparar. Los bancos y tarjetas suelen añadir un margen o comisiones." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="./"><img src="../img/icon.png" alt="" width="32" height="32">Convertidor de Monedas</a>
+    <div class="links">
+      <a href="#como">Cómo funciona</a>
+      <a href="#funciones">Funciones</a>
+      <a href="#faq">Preguntas</a>
+      <a class="lang" href="../" hreflang="en" lang="en">English</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <span class="tag">Gratis para Chrome y Edge</span>
+      <h1>Ve cualquier precio en <em>tu</em> moneda.</h1>
+      <p class="lead">Selecciona un precio en cualquier tienda, hotel o sitio de viajes y velo convertido al instante — sin abrir pestañas ni buscar “cuánto es $249 dólares en pesos”.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://chromewebstore.google.com/detail/oibcaoobgfoehhhjjlahbbmkhciipbki">Agregar a Chrome — gratis</a>
+        <a class="btn secondary" href="https://microsoftedge.microsoft.com/addons/detail/fppgldlgjjakillggnaifamehdjmanmi">Obtener para Edge</a>
+      </div>
+      <p class="note">Sin cuenta · Sin anuncios · Sin rastreo · Más de 200 monedas</p>
+    </div>
+    <img class="hero-img" src="../img/screenshot-1-bubble.png" width="1280" height="800" alt="Precio de €249.99 seleccionado en una tienda, con un globo que muestra $5,083.83 MXN, $280.10 USD y £211.81 GBP">
+  </header>
+</div>
+
+<main>
+  <section id="como">
+    <div class="wrap">
+      <h2>Tres formas de convertir</h2>
+      <p class="sub">Currency Converter – Instant Prices es una extensión de navegador que convierte precios extranjeros a tu moneda justo donde los ves.</p>
+      <div class="grid3">
+        <div class="card"><div class="n">1</div><h3>Selecciona un precio</h3><p>Selecciona “€49,99”, “$1,299” o “£12” en cualquier página y un globo lo muestra en tu moneda. Haz clic en un valor para copiarlo.</p></div>
+        <div class="card"><div class="n">2</div><h3>Clic derecho → Convert</h3><p>Funciona incluso con números sin símbolo: la extensión usa la moneda del sitio.</p></div>
+        <div class="card"><div class="n">3</div><h3>Conversor en la barra</h3><p>Abre el conversor completo con más de 200 monedas, ya cargado con el precio que seleccionaste.</p></div>
+      </div>
+      <div class="shots">
+        <img src="../img/screenshot-1-bubble.png" width="1280" height="800" loading="lazy" alt="Globo de conversión junto a un precio seleccionado">
+        <img src="../img/screenshot-2-popup.png" width="1280" height="800" loading="lazy" alt="Conversor de la barra mostrando €249.99 en pesos mexicanos, dólares y libras">
+        <img src="../img/screenshot-3-settings.png" width="1280" height="800" loading="lazy" alt="Ajustes para elegir moneda principal y monedas adicionales">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Hecha para compras y viajes</h2>
+      <p class="sub">Donde sea que aparezca un precio en una moneda que no es la tuya.</p>
+      <div class="uses">
+        <div class="card"><div class="ico">🛒</div><h3>Compras en línea</h3><p>Amazon, eBay, AliExpress y tiendas del extranjero.</p></div>
+        <div class="card"><div class="ico">🏨</div><h3>Hoteles</h3><p>Compara tarifas por noche en Booking, Airbnb y sitios de hoteles.</p></div>
+        <div class="card"><div class="ico">✈️</div><h3>Vuelos y viajes</h3><p>Tarifas, tours, renta de autos y boletos.</p></div>
+        <div class="card"><div class="ico">💼</div><h3>Trabajo y freelance</h3><p>Facturas, sueldos y suscripciones de software.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="funciones">
+    <div class="wrap">
+      <h2>Detección inteligente, tasas confiables</h2>
+      <p class="sub">Entiende los precios tal como se escriben en todo el mundo:</p>
+      <div class="formats">
+        <code>$1,299.00</code><code>€49,99</code><code>US$ 25</code><code>1.234,56 EUR</code><code>£12</code><code>¥3,980</code><code>R$ 99</code><code>AU$1,799</code><code>S/ 150</code><code>25 dólares</code>
+      </div>
+      <div class="grid3" style="margin-top:32px">
+        <div class="card"><h3>Tasas oficiales del BCE</h3><p>Las tasas de referencia del Banco Central Europeo tienen prioridad, más datos abiertos para más de 200 monedas y criptomonedas.</p></div>
+        <div class="card"><h3>Siempre al día, funciona sin conexión</h3><p>Las tasas se actualizan solas cada 6 horas y se guardan, así que la conversión es instantánea.</p></div>
+        <div class="card"><h3>Privada por diseño</h3><p>El texto seleccionado nunca sale de tu navegador. Sin cuentas, analítica ni anuncios. <a href="https://seawolfmx.github.io/currency-converter-privacy/">Política de privacidad</a>.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <h2>Preguntas frecuentes</h2>
+      <p class="sub">&nbsp;</p>
+      <details open><summary>¿Cómo convierto precios al comprar en una tienda extranjera?</summary><p>Instala la extensión gratuita Currency Converter – Instant Prices para Chrome o Edge, elige tu moneda (por ejemplo pesos mexicanos) y selecciona cualquier precio en la página. Un globo te muestra al instante el monto en tu moneda, sin abrir otra pestaña ni buscar en Google.</p></details>
+      <details><summary>¿La extensión es gratis?</summary><p>Sí. Es totalmente gratuita, sin anuncios, sin cuenta y sin compras dentro de la extensión.</p></details>
+      <details><summary>¿De dónde salen los tipos de cambio?</summary><p>Tienen prioridad las tasas de referencia oficiales del Banco Central Europeo (vía la API Frankfurter). El resto de monedas y criptomonedas vienen del conjunto de datos abierto fawazahmed0 currency-api. Se actualizan solas cada 6 horas.</p></details>
+      <details><summary>¿Qué monedas y formatos de precio reconoce?</summary><p>Más de 200 monedas. Detecta símbolos como $, €, £, ¥, R$, AU$ y S/, códigos ISO como USD, EUR, MXN y GBP, palabras como “dólares” o “euros”, y los formatos 1,234.56 y 1.234,56.</p></details>
+      <details><summary>¿Sirve para comparar precios de hoteles y vuelos al viajar?</summary><p>Sí. Selecciona la tarifa por noche en un sitio de hoteles o el precio de un vuelo y ve el monto en tu moneda y en monedas adicionales como USD y EUR, lado a lado.</p></details>
+      <details><summary>¿Qué significa el signo $ en cada sitio web?</summary><p>Como muchos países usan $, la extensión lo deduce del dominio del sitio (.mx es peso mexicano, .ca dólar canadiense, .ar peso argentino y el resto dólar estadounidense). También puedes fijar una moneda en Ajustes.</p></details>
+      <details><summary>¿La extensión recopila mis datos?</summary><p>No. El texto que seleccionas se procesa dentro de tu navegador y nunca se envía. Las únicas conexiones descargan archivos públicos de tipos de cambio. No hay analítica ni rastreo.</p></details>
+      <details><summary>¿Es el mismo tipo de cambio que me cobrará el banco?</summary><p>No. Son tasas de referencia de mercado para comparar. Los bancos y tarjetas suelen añadir un margen o comisiones.</p></details>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="band">
+        <h2>Deja de buscar el tipo de cambio en Google.</h2>
+        <p>Instálala una vez y solo selecciona precios.</p>
+        <div class="cta" style="justify-content:center">
+          <a class="btn primary" href="https://chromewebstore.google.com/detail/oibcaoobgfoehhhjjlahbbmkhciipbki">Agregar a Chrome</a>
+          <a class="btn secondary" href="https://microsoftedge.microsoft.com/addons/detail/fppgldlgjjakillggnaifamehdjmanmi">Obtener para Edge</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="wrap">
+  <footer>
+    <span>© 2026 MG Soluciones · <a href="mailto:mg.soluciones.mex@gmail.com">mg.soluciones.mex@gmail.com</a></span>
+    <span><a href="https://seawolfmx.github.io/currency-converter-privacy/">Política de privacidad</a> · <a href="../" hreflang="en">English</a> · Tasas de referencia, no es asesoría financiera.</span>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+# Currency Converter – Instant Prices
+
+> Free browser extension for Google Chrome and Microsoft Edge that converts prices on any website into the user's own currency. The user highlights a price (e.g. "€49,99", "$1,299", "£12"), right-clicks it, or opens the toolbar popup, and sees the amount in their home currency plus optional extra currencies. Published by MG Soluciones (Mexico).
+
+Key facts:
+- Price: free. No account, no ads, no in-app purchases, no analytics or tracking.
+- Browsers: Google Chrome and Microsoft Edge (Manifest V3), on Windows, macOS, Linux and ChromeOS.
+- Exchange rates: official European Central Bank reference rates via the Frankfurter API take priority; 200+ other currencies and major cryptocurrencies come from the open fawazahmed0 currency-api dataset. Refreshed every 6 hours and cached locally (works offline).
+- Price detection: symbols ($, €, £, ¥, R$, AU$, S/, ₹, ₩…), ISO codes (USD, EUR, MXN, GBP…), words ("dollars", "euros", "dólares", "pesos"), and both 1,234.56 and 1.234,56 number formats. The ambiguous "$" is inferred from the website domain (.mx → MXN, .ca → CAD, .ar → ARS, otherwise USD) or set by the user.
+- Use cases: online shopping on foreign stores (Amazon, eBay, AliExpress), comparing hotel prices (Booking, Airbnb), flights and travel bookings, freelance invoices and subscriptions.
+- Privacy: selected text is processed locally and never transmitted. Rates are mid-market reference values; banks may charge a different rate.
+
+## Links
+- [Website (English)](https://seawolfmx.github.io/currency-converter/)
+- [Sitio web (Español)](https://seawolfmx.github.io/currency-converter/es/)
+- [Chrome Web Store](https://chromewebstore.google.com/detail/oibcaoobgfoehhhjjlahbbmkhciipbki)
+- [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/fppgldlgjjakillggnaifamehdjmanmi)
+- [Privacy policy](https://seawolfmx.github.io/currency-converter-privacy/)
+
+## Contact
+- Support: mg.soluciones.mex@gmail.com
